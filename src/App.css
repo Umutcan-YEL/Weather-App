@@ -1,4 +1,53 @@
-.gutter-box {
-  padding: 8px 0;
-  background: #00a0e9;
+@media only screen and (max-width: 640px) {
+  body {
+    background-image: url('./assets/mobilebackground2.png');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+}
+@media only screen and (min-width: 800px) {
+  body {
+    background-image: url(./assets/background2.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    overflow: hidden;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+}
+
+.text-white {
+  color: white;
+}
+
+.weather-box {
+  background: rgba(54, 57, 60, 0.28);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+  border: 1px solid rgba(54, 57, 60, 0.22);
+  margin: 10px;
+  padding: 10px;
+}
+
+.picture-center {
+}
+.divider {
+  border: solid 1px white;
+}
+
+.button-selected {
+  /* background-color: #01257d !important ;*/
+}
+
+.lang-button {
+  border: 0.3px solid grey !important;
 }
