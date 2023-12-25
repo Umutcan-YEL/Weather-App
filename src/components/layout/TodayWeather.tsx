@@ -1,9 +1,7 @@
-import { Divider } from "antd";
 import { TodayWeatherProps } from "../../models/WeatherDataModel";
 import { useTranslation } from "react-i18next";
 import { Row, Col, Container } from "react-bootstrap";
-import { Typography } from "antd";
-const { Title } = Typography;
+
 
 const TodayWeather = ({
   cityName,
