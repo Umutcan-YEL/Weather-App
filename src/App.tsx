@@ -31,15 +31,19 @@ function App() {
     pressure: WeatherData.list[0].main.pressure,
     cityName: WeatherData.city.name,
     countryName: WeatherData.city.country,
+    feelsLike: Math.round(WeatherData.list[0].main.feels_like),
   };
 
   return (
     <Container fluid className="m-2">
       <Row>
-        <Col md={12} className="">
+        {" "}
+        <Col>
           <Header />
         </Col>
-        <Col md={12} className="mt-2">
+      </Row>
+      <Row>
+        <Col>
           <Main
             cityName={data.cityName}
             countryName={data.countryName}
@@ -51,9 +55,13 @@ function App() {
             pressure={data.pressure}
             temperature={data.temperature}
             wind={data.wind}
+            feelsLike={data.feelsLike}
           />
         </Col>
-        <Col md={12}>
+      </Row>
+      <Row>
+        {" "}
+        <Col>
           <div className="gutter-box">col-6</div>
         </Col>
       </Row>

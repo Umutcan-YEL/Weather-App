@@ -14,11 +14,12 @@ const Main = ({
   pressure,
   temperature,
   wind,
+  feelsLike,
 }: Props) => {
   return (
     <Container fluid>
       <Row>
-        <Col md={2} xs={11} className="weather-box">
+        <Col className="weather-box m-2" md={2} xs={11}>
           <TodayWeather
             cityName={cityName}
             countryName={countryName}
@@ -29,8 +30,14 @@ const Main = ({
             temperature={temperature}
           />
         </Col>
-        <Col>
-          <TodayHighlights />
+
+        <Col className="weather-box m-2">
+          <TodayHighlights
+            feelsLike={feelsLike}
+            humidity={humidity}
+            pressure={pressure}
+            wind={wind}
+          />
         </Col>
       </Row>
     </Container>

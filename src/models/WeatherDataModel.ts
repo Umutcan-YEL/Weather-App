@@ -25,6 +25,14 @@ export interface Props {
   pressure: number;
   cityName: string;
   countryName: string;
+  feelsLike: number;
+}
+
+export interface TodayHighlightsProps {
+  humidity: number;
+  wind: number;
+  pressure: number;
+  feelsLike: number;
 }
 
 export interface TodayWeatherProps {

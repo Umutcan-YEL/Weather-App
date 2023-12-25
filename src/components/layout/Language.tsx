@@ -13,18 +13,14 @@ const Language = () => {
     <ButtonGroup style={{ float: "right" }}>
       <Button
         variant="primary"
-        className={`lang-button  ${
-          i18n.language == "en" ? "button-selected" : ""
-        }`}
+        className={i18n.language == "en" ? "button-selected" : "lang-button"}
         onClick={() => changeLanguage("en")}
       >
         English
       </Button>
       <Button
         variant="primary"
-        className={`lang-button  ${
-          i18n.language == "tr" ? "button-selected" : ""
-        }`}
+        className={i18n.language == "tr" ? "button-selected" : "lang-button"}
         onClick={() => changeLanguage("tr")}
       >
         Türkçe

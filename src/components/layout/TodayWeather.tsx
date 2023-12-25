@@ -17,7 +17,7 @@ const TodayWeather = ({
   const { t } = useTranslation();
 
   return (
-    <Container fluid className="text-white p-3">
+    <Container fluid className="text-white p-3 ">
       <Row>
         {" "}
         <h2> {t("Now")}</h2>
@@ -25,11 +25,11 @@ const TodayWeather = ({
       <hr className="divider" />
 
       <Row>
-        <Col style={{ margin: "auto"}}>
+        <Col style={{ margin: "auto" }}>
           <h1> {temperature} °C</h1>{" "}
         </Col>
         <Col>
-          <img src={icon} className="picture-center" height={"100vh"} alt="icon" />
+          <img src={icon} className="picture-center" alt="icon" />
         </Col>
       </Row>
       <Row>
@@ -39,8 +39,7 @@ const TodayWeather = ({
 
       <Row>
         <Col>
-          <h5>{day + hour}</h5>{" "}
-          <br />
+          <h5>{day + hour}</h5> <br />
           <h5>
             {cityName} ,{countryName}
           </h5>
