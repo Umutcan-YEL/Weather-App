@@ -1,7 +1,7 @@
 import { Row, Col, Container } from "react-bootstrap";
 import TodayWeather from "../components/layout/TodayWeather";
 import TodayHighlights from "../components/layout/TodayHighlights";
-import { Props } from "../models/WeatherDataModel";
+import { MainProps } from "../models/WeatherDataModel";
 
 const Main = ({
   cityName,
@@ -15,7 +15,7 @@ const Main = ({
   temperature,
   wind,
   feelsLike,
-}: Props) => {
+}: MainProps) => {
   return (
     <Container fluid>
       <Row>

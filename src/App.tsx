@@ -7,6 +7,7 @@ import { Props } from "./models/WeatherDataModel";
 import moment from "moment";
 import { useTranslation } from "react-i18next";
 import { Row, Col, Container } from "react-bootstrap";
+import WeeklyGraph from "./components/layout/WeeklyGraph";
 
 function App() {
   const { t } = useTranslation();
@@ -32,6 +33,7 @@ function App() {
     cityName: WeatherData.city.name,
     countryName: WeatherData.city.country,
     feelsLike: Math.round(WeatherData.list[0].main.feels_like),
+    list: WeatherData.list,
   };
 
   return (
@@ -62,7 +64,7 @@ function App() {
       <Row>
         {" "}
         <Col>
-          <div className="gutter-box">col-6</div>
+          <WeeklyGraph list={[data.list]} />
         </Col>
       </Row>
     </Container>
