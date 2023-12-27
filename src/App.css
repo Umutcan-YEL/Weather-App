@@ -1,4 +1,4 @@
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 799px) {
   body {
     background-image: url("./assets/mobilebackground2.png");
     background-position: center center;
@@ -48,15 +48,31 @@
   padding: 10px;
 }
 
-.picture-center {
-}
 .divider {
   border: solid 1px white;
 }
+.text-white {
+  color: white !important ;
+  text-decoration: none !important;
+}
+.css-1h51icj-MuiAutocomplete-root
+  .MuiAutocomplete-inputRoot
+  .MuiAutocomplete-input {
+  color: white;
+}
 
+.searchbar {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 20px;
+  color: white !important;
+}
 .button-selected {
   /* From https://css.glass */
-  background: rgba(20, 57, 207, 0.2) !important;
+  background: rgba(4, 4, 7, 0.2) !important;
   box-shadow: 0 4px 30px rgba(20, 57, 207, 0.2) !important;
   backdrop-filter: blur(4.9px) !important;
   -webkit-backdrop-filter: blur(4.9px) !important;

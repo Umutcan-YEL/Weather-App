@@ -115,7 +115,7 @@ const WeeklyGraph = ({ list }: WeeklyGraphProps) => {
   const day = today.getDay();
 
   return (
-    <Container fluid className="weather-box">
+    <Container fluid className="weather-box  ">
       <Row>
         <Tabs
           defaultActiveKey={day}

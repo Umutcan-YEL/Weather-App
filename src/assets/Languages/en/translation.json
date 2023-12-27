@@ -29,5 +29,6 @@
   "snow": "Light snow",
   "heavy snow": "Heavy snow",
   "alert": "Please enter a valid city",
-  "hafif yağmur": "hafif yağmur"
+  "hafif yağmur": "hafif yağmur",
+  "location-request": "Please Allow Access to Your Location"
 }

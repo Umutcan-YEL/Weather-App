@@ -29,5 +29,6 @@
   "snow": "Kar yağışlı",
   "heavy snow": "Fazla kar yağışlı",
   "alert": "Lütfen Geçerli bir Şehir Giriniz",
-  "hafif yağmur": "hafif yağmur"
+  "hafif yağmur": "hafif yağmur",
+  "location-request": "Lütfen Konum Erişimine İzin Veriniz"
 }

@@ -5,9 +5,6 @@ import { Line } from "react-chartjs-2";
 
 import { Chart as ChartJS, registerables } from "chart.js/auto";
 const Graph = ({ temperature, time }: GraphProps) => {
-
-    console.log(temperature,time);
-    
   ChartJS.register(...registerables);
   const options = {
     scales: {
@@ -30,7 +27,7 @@ const Graph = ({ temperature, time }: GraphProps) => {
     ],
   };
   return (
-    <Line data={graphData} options={options} style={{ maxHeight: "43vh" }} />
+    <Line data={graphData} options={options} style={{ maxHeight: "40vh" }} />
   );
 };
 
