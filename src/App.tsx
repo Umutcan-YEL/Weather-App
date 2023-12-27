@@ -32,6 +32,11 @@ function App() {
             setTrigger(true);
           },
           (error) => {
+            const sendingData = {
+              city: "Çorum",
+              cords: false,
+            };
+            dispatch(fetchWeatherData(sendingData));
             console.warn(error.message);
           },
           {
@@ -40,6 +45,11 @@ function App() {
           }
         );
       } else {
+        const sendingData = {
+          city: "Çorum",
+          cords: false,
+        };
+        dispatch(fetchWeatherData(sendingData));
         console.warn("Geolocation is not supported by this browser.");
       }
     }
