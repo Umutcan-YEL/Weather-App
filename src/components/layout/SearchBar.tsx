@@ -48,7 +48,7 @@ const SearchBar = () => {
       freeSolo
       id="free-solo-2-demo"
       disableClearable
-      onChange={(event, newValue) => handleSearch(newValue)}
+      onChange={(_, newValue) => handleSearch(newValue)}
       options={options}
       renderInput={(params) => (
         <TextField
