@@ -1,4 +1,5 @@
-# React(TypeScript) kullanarak
+#  Weather Forecast App
+React(TypeScript) kullanarak
 geliştirdiğim hava durumu uygulaması, kullanıcıların
 konumlarına göre gerçek zamanlı hava durumu bilgilerini
 gösteriyor. Uygulama, OpenWeatherMap API'si ile entegre
