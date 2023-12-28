@@ -6,7 +6,7 @@ function Header() {
   return (
     <Container fluid>
       <Row>
-        <Col>abc </Col>
+        <Col md={4}> </Col>
         <Col>
           <SearchBar />
         </Col>
